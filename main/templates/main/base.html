@@ -79,7 +79,13 @@
         </div>
     </nav>
 
-    {% block content %}{% endblock content %}
+    <div id="content">
+        {% block content %}{% endblock content %}
+    </div>
+
+    <div id="footer" class="jumbotron-fluid color-bg-01" >
+        <p class="text-center p-3 font-weight-bold">This website is belong to IT15</p>
+    </div>
 
     {% block before_script %}{% endblock before_script %}
 

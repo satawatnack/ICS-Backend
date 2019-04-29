@@ -1,8 +1,11 @@
 .material-icons {
-    vertical-align: text-bottom;
+    vertical-align: bottom;
 }
 
 body {
     height: 2000px;
 }
 
+#content {
+    margin-top: 56px;
+}
