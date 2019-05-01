@@ -63,8 +63,9 @@
                     </div>
                 </li>
             </ul>
+            {% if user.is_authenticated %}
             <div class="btn-group">
-                <button type="button" class="btn color-bg-02 dropdown-toggle" data-toggle="dropdown"
+                <button type="button" class="btn color-bg-02 color-font-02 dropdown-toggle" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     <i class="material-icons">person</i>
                     My Account
@@ -72,14 +73,31 @@
                 <div class="dropdown-menu dropdown-menu-right">
                     <a class="dropdown-item" href="#">My Orders</a>
                     <a class="dropdown-item" href="#">My History</a>
+                    <a class="dropdown-item" href="{% url 'profile' %}">My Profile</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Log Out</a>
+                    <a class="dropdown-item" href="{% url 'logout' %}">Log Out</a>
                 </div>
             </div>
+            {% else %}
+                <div class="btn-group">
+                <button type="button" class="btn color-bg-02 color-font-02"
+                    aria-haspopup="true" aria-expanded="false">
+                    <i class="material-icons">lock</i>
+                    <a href="{% url 'login' %}">Login</a>
+                </button>
+                </div>
+            {% endif %}
         </div>
     </nav>
 
     <div id="content">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
         {% block content %}{% endblock content %}
     </div>
 
