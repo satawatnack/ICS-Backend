@@ -4,12 +4,23 @@
     <div class="container">
         <div class="content-section">
             <div class="media">
-            <img class="account-img" src="{{ user.profile.image.url }}" width="200" >
+            <img class="account-img " src="{{ user.image.url }}">
                 <div class="media-body">
                     <h2 class="account-heading">{{ user.username }}</h2>
                     <p class="text-secondary">{{ user.email }}</p>
                 </div>
             </div>
         </div>
+    <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">-- Profile --</legend>
+                {{ u_form|crispy }}
+                {{ p_form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">update</button>
+            </div>
+        </form>
     </div>
 {% endblock content %}
