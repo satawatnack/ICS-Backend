@@ -2,38 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9eb0ee8c-3aae-42f7-b163-75efe0ee261b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/main/pipeline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ICS/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ICS/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/users/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/users/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0237.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0237.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0238.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0238.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0238_d7WKgQh.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0238_d7WKgQh.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0238_uTtFT6S.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0238_uTtFT6S.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0240.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0240.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0240_EL9jhCJ.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0240_EL9jhCJ.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0240_KSB0mC4.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0240_KSB0mC4.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0240_hCAILRT.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0240_hCAILRT.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0240_jobc3dJ.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0240_jobc3dJ.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0240_nc1ff9s.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0240_nc1ff9s.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0240_uPtTpiM.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0240_uPtTpiM.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0250.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0250.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0250_3n2CryJ.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0250_3n2CryJ.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0250_5ttsNhx.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0250_5ttsNhx.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0250_DAhEXBT.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0250_DAhEXBT.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0250_EFBqSeV.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0250_EFBqSeV.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0250_H8bztkT.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0250_H8bztkT.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0250_I7EPgeZ.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0250_I7EPgeZ.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0250_fGp1bEE.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0250_fGp1bEE.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0250_h09LJ0X.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0250_h09LJ0X.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0250_kbbTXue.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0250_kbbTXue.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0250_mHcsPVg.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0250_mHcsPVg.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0250_qxMj25t.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0250_qxMj25t.JPG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_pics/DSC_0250_xurnHO9.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/media/profile_images/DSC_0250_xurnHO9.JPG" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,10 +19,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="116" column="10" selection-start-line="116" selection-end-line="117" />
+            <state>
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#1#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,8 +30,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="60" column="19" lean-forward="true" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
+            <state relative-caret-position="380">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -254,12 +223,12 @@
       <workItem from="1556728859854" duration="7992000" />
       <workItem from="1556736902213" duration="1158000" />
       <workItem from="1556769058178" duration="20852000" />
-      <workItem from="1556857575451" duration="18278000" />
+      <workItem from="1556857575451" duration="19700000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80406000" />
+    <option name="totallyTimeSpent" value="81828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="-7" width="1550" height="838" extended-state="6" />
@@ -493,18 +462,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="116" column="10" selection-start-line="116" selection-end-line="117" />
+        <state>
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#1#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="60" column="19" lean-forward="true" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
+        <state relative-caret-position="380">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>

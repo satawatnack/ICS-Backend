@@ -25,14 +25,26 @@ class ReportAdmin(admin.ModelAdmin):
 admin.site.register(Report, ReportAdmin)
 
 
+class MenuInline(admin.StackedInline):
+    model = Menu
+    extra = 3
+
+
 class RestaurantAdmin(admin.ModelAdmin):
     list_display = ['res_id', 'res_name', 'status', 'owner']
     list_per_page = 15
     list_filter = ['status', 'rating', 'open_time', 'close_time']
     search_fields = ['res_name']
 
+    inlines = [MenuInline]
+
 
 admin.site.register(Restaurant, RestaurantAdmin)
+
+
+class ExtraInline(admin.StackedInline):
+    model = Extra
+    extra = 1
 
 
 class MenuAdmin(admin.ModelAdmin):
@@ -40,6 +52,8 @@ class MenuAdmin(admin.ModelAdmin):
     list_per_page = 15
     list_filter = ['price', 'status', 'rating', 'prepare_time']
     search_fields = ['menu_name']
+
+    inlines = [ExtraInline]
 
 
 admin.site.register(Menu, MenuAdmin)
