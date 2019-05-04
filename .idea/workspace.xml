@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9eb0ee8c-3aae-42f7-b163-75efe0ee261b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
     </list>
@@ -19,9 +20,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="260">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
               <folding>
-                <element signature="e#1#29#0" expanded="true" />
+                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -30,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="260">
+              <caret line="48" column="171" selection-start-line="48" selection-start-column="171" selection-end-line="48" selection-end-column="171" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -223,12 +225,12 @@
       <workItem from="1556728859854" duration="7992000" />
       <workItem from="1556736902213" duration="1158000" />
       <workItem from="1556769058178" duration="20852000" />
-      <workItem from="1556857575451" duration="19700000" />
+      <workItem from="1556857575451" duration="26160000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81828000" />
+    <option name="totallyTimeSpent" value="88288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="-7" width="1550" height="838" extended-state="6" />
@@ -429,16 +431,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main/templates/users/profile.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -460,19 +452,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="260">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
           <folding>
-            <element signature="e#1#29#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="260">
+          <caret line="48" column="171" selection-start-line="48" selection-start-column="171" selection-end-line="48" selection-end-column="171" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
