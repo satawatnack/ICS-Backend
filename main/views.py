@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .forms import UserRegisterForm, UserUpdateForm
+from .forms import UserRegisterForm, UserUpdateForm, OrderForm
+from .models import Order
+from django.contrib.auth.models import User
 
 
 def index(request):
@@ -22,6 +24,31 @@ def register(request):
     else:
         form = UserRegisterForm()
     return render(request, 'users/register.html', {'form': form})
+
+
+def register(request):
+    if request.method == 'POST':
+        form = UserRegisterForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            messages.success(request, f'Your account has been created!')
+            return redirect('login')
+    else:
+        form = UserRegisterForm()
+    return render(request, 'users/register.html', {'form': form})
+
+@login_required
+def order(request):
+    if request.method == 'POST':
+        form = OrderForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'order has been sent!')
+            return redirect('index')
+    else:
+        form = OrderForm()
+    return render(request, 'main/order.html', {'form': form})
 
 
 @login_required

@@ -11,6 +11,14 @@ class UserAdmin(admin.ModelAdmin):
     list_filter = ['user_type', 'dob']
     search_fields = ['username']
 
+    fieldsets = [
+        (None, {'fields': ['username', 'password', 'first_name', 'last_name', 'email', 'dob', 'image_path']}),
+        ("User Management", {
+            'fields': ['last_login', 'date_joined'], 'classes': ['collapse']}),
+        ("User Permissions", {
+            'fields': ['user_type', 'groups', 'user_permissions', 'is_staff', 'is_active'], 'classes': ['collapse']})
+    ]
+
 
 admin.site.register(User, UserAdmin)
 
@@ -36,6 +44,11 @@ class RestaurantAdmin(admin.ModelAdmin):
     list_filter = ['status', 'rating', 'open_time', 'close_time']
     search_fields = ['res_name']
 
+    fieldsets = [
+        (None, {'fields': ['res_name', 'description', 'rating', 'owner', 'status', 'image_path']}),
+        ("Time Management", {'fields': ['open_time', 'close_time', 'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'], 'classes':['collapse']}),
+    ]
+
     inlines = [MenuInline]
 
 
@@ -44,11 +57,11 @@ admin.site.register(Restaurant, RestaurantAdmin)
 
 class ExtraInline(admin.StackedInline):
     model = Extra
-    extra = 1
+    extra = 0
 
 
 class MenuAdmin(admin.ModelAdmin):
-    list_display = ['menu_id', 'menu_name', 'price', 'status', 'rating']
+    list_display = ['menu_id', 'menu_name', 'res_id', 'price', 'status', 'rating']
     list_per_page = 15
     list_filter = ['price', 'status', 'rating', 'prepare_time']
     search_fields = ['menu_name']
@@ -60,7 +73,7 @@ admin.site.register(Menu, MenuAdmin)
 
 
 class ExtraAdmin(admin.ModelAdmin):
-    list_display = ['menu_id', 'extra_description', 'extra_price']
+    list_display = ['menu_id', 'extra_name', 'extra_description', 'extra_price']
     list_per_page = 15
     list_filter = ['extra_price']
     search_fields = ['menu_name']
