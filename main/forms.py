@@ -28,4 +28,4 @@ class AddMenuForm(forms.ModelForm):
 
     class Meta:
         model = Menu
-        fields = ['res_id', 'menu_name', 'description', 'prepare_time', 'image_path', 'price', 'amount', 'status']
+        fields = ['menu_name', 'description', 'prepare_time', 'image_path', 'price', 'amount', 'status']

@@ -2,8 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm, UserUpdateForm, OrderForm, AddMenuForm
-from .models import Order, Menu, Restaurant
-from django.contrib.auth.models import User
+from .models import Order, Menu, Restaurant, User, Staff
 
 
 def index(request):
@@ -38,30 +37,20 @@ def register(request):
         form = UserRegisterForm()
     return render(request, 'users/register.html', {'form': form})
 
-# @login_required
-# def order(request):
-#     if request.method == 'POST':
-#         form = OrderForm(request.POST, menus=menus)
-#         order = form.save(commit=False)
-#         order.menus = menu
-#         order.save()
-#         # if form.is_valid():
-#         #     # Order.objects.create(
-#         #     #     user_id=form.cleaned_data.get('user_id'),
-#         #     #     menus=form.cleaned_data.get('menu_name'),
-#         #     #     description=form.cleaned_data.get('description'),
-#         #     #     prepare_time=form.cleaned_data.get('prepare_time'),
-#         #     #     image_path=form.cleaned_data.get('image_path'),
-#         #     #     price=form.cleaned_data.get('price'),
-#         #     #     amount=form.cleaned_data.get('amount'),
-#         #     #     status=form.cleaned_data.get('status'),
-#         #     # )
-#
-#             messages.success(request, 'order has been sent!')
-#             return redirect('index')
-#     else:
-#         form = OrderForm()
-#     return render(request, 'main/order.html', {'form': form})
+@login_required
+def order(request):
+
+    if request.method == 'POST':
+        form = OrderForm(request.POST)
+        if form.is_valid():
+            # order = form.save(commit=False)
+            # order.user_id = request.user
+            form.save()
+            messages.success(request, 'order has been sent!')
+            return redirect('index')
+    else:
+        form = OrderForm()
+    return render(request, 'main/order.html', {'form': form})
 
 
 @login_required
@@ -82,13 +71,18 @@ def profile(request):
     }
     return render(request, 'users/profile.html', context)
 
+
 @login_required
 def addMenu(request):
     if request.method == 'POST':
         form = AddMenuForm(request.POST)
+        user_id = request.user.id
+        staff = Staff.objects.get(user_id=user_id)
+        res = Restaurant.objects.get(res_id=staff.res_id_id)
+
         if form.is_valid():
             Menu.objects.create(
-                res_id=form.cleaned_data.get('res_id'),
+                res_id=res,
                 menu_name=form.cleaned_data.get('menu_name'),
                 description=form.cleaned_data.get('description'),
                 prepare_time=form.cleaned_data.get('prepare_time'),

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from main.models import User, Report, Restaurant, Menu, Extra, Order
+from main.models import User, Report, Restaurant, Menu, Extra, Order, Staff
 from django.contrib.auth.models import Permission
 
 admin.site.register(Permission)
@@ -90,3 +90,12 @@ class OrderAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Order, OrderAdmin)
+
+
+class StaffAdmin(admin.ModelAdmin):
+    list_display = ['res_id', 'user_id']
+    list_per_page = 15
+    list_filter = ['res_id']
+    search_fields = ['user_id']
+
+admin.site.register(Staff, StaffAdmin)
