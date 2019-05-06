@@ -43,8 +43,8 @@ def order(request):
     if request.method == 'POST':
         form = OrderForm(request.POST)
         if form.is_valid():
-            # order = form.save(commit=False)
-            # order.user_id = request.user
+            order = form.save(commit=False)
+            order.user_id = request.user
             form.save()
             messages.success(request, 'order has been sent!')
             return redirect('index')
@@ -96,3 +96,4 @@ def addMenu(request):
     else:
         form = AddMenuForm()
     return render(request, 'main/addMenu.html', {'form': form})
+
