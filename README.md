@@ -1,2 +1,2 @@
 # ICS-Backend
-Intelligent-Canteen-System backend useing django
+Intelligent-Canteen-System backend by use django
